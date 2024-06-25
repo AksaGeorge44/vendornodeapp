@@ -7,7 +7,6 @@ import 'package:petshop/appoinments/clinicpage.dart';
 import 'package:petshop/cart/productdetails.dart';
 import 'package:petshop/firebase_helper/prodctmodel.dart';
 import 'package:petshop/petProducts/accessories.dart';
-import 'package:petshop/petProducts/dogprdct.dart';
 import 'package:petshop/petProducts/petproductpage.dart';
 import 'package:petshop/petProducts/toys.dart';
 import 'package:petshop/grooming/groomingpage.dart';
@@ -246,31 +245,31 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(
                 height: 15,
               ),
-              Padding(
-                padding: const EdgeInsets.all(20),
-                child: SizedBox(
-                  child: Card(
-                    color: Colors.white,
-                    elevation: 2.0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        children: [
-                          Image.network(
-                            "https://thepetsbasket.com/cdn/shop/files/IMG-20220826-WA0005_1920x700.jpg?v=1661891618",
-                            height: 250,
-                            width: 320,
-                            fit: BoxFit.fill,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
+              // Padding(
+              //   padding: const EdgeInsets.all(20),
+              //   child: SizedBox(
+              //     child: Card(
+              //       color: Colors.white,
+              //       elevation: 2.0,
+              //       shape: RoundedRectangleBorder(
+              //         borderRadius: BorderRadius.circular(20),
+              //       ),
+              //       child: SingleChildScrollView(
+              //         scrollDirection: Axis.horizontal,
+              //         child: Row(
+              //           children: [
+              //             Image.network(
+              //               "https://thepetsbasket.com/cdn/shop/files/IMG-20220826-WA0005_1920x700.jpg?v=1661891618",
+              //               height: 250,
+              //               width: 320,
+              //               fit: BoxFit.fill,
+              //             ),
+              //           ],
+              //         ),
+              //       ),
+              //     ),
+              //   ),
+              // ),
               const SizedBox(
                 height: 20,
               ),
@@ -671,12 +670,7 @@ class _HomePageState extends State<HomePage> {
                                 fit: BoxFit.cover,
                               ),
                             ),
-                            Image.network(
-                              "https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/5f572975a0017_template_image_1599547765.webp",
-                              height: 300,
-                              width: 300,
-                              fit: BoxFit.cover,
-                            ),
+                          
                             const SizedBox(
                               width: 20,
                             ),
@@ -722,24 +716,8 @@ class _HomePageState extends State<HomePage> {
                         padding: const EdgeInsets.all(20),
                         child: Row(
                           children: [
-                            GestureDetector(
-                              onTap: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            const DogprdctPage()));
-                              },
-                              child: Image.network(
-                                "https://www.smartpets.store/wp-content/uploads/2020/09/5f25045a6dfc7-1.png",
-                                height: 300,
-                                width: 290,
-                                fit: BoxFit.contain,
-                              ),
-                            ),
-                            const SizedBox(
-                              width: 20,
-                            ),
+                          
+                          
                             Image.network(
                               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCCmgdWxc88b3fR7GkXmgVCKaLEDNGxSyZCo49-qEZ69f_dxyFZbAL7aNL6eikypv_sxc&usqp=CAU",
                               height: 300,
@@ -851,7 +829,7 @@ List<ProductModel> bestProducts = [
       description:
           " Drools Chicken and Egg Adult Dry Dog Food offers a complete and balanced nutritional diet for your dog. We use Real Chicken which is our #1 ingredient, making our food rich in protein which helps in maintaining lean muscles for top body condition of your dog. It boosts digestive ability and strengthens immune system to keep them active and healthy all day long. ",
       image:
-          "https://supertails.com/cdn/shop/files/image536_11563aff-c8f2-427d-a7dc-9e44a2226ede_1800x1800.png?v=1686051438",
+          "https://th.bing.com/th/id/OIP.XCZXimSfnzAcMTHv9jSK5QHaMS?rs=1&pid=ImgDetMain",
       isFavourite: false,
       price: 704,
       stock: 20,
@@ -874,7 +852,7 @@ List<ProductModel> bestProducts = [
       id: "4",
       name: "Royal Canin",
       image:
-          "https://supertails.com/cdn/shop/products/imageframe_8_52777eae-fcba-4fc0-bf6a-0238caafc914_1800x1800.png?v=1678792389",
+      "https://img.chewy.com/is/image/catalog/88037_MAIN._AC_SL1500_V1530030553_.jpg",
       description:
           "ROYAL CANIN® Maxi Puppy is specially formulated with the nutritional needs of your large puppy in mind. This food is suitable for large puppies from 2 to 15 months old that will have an adult weight of approximately 26kg-44kg. ROYAL CANIN® Maxi Puppy food contains a patented complex of antioxidants - including the highly beneficial vitamin E - to support your puppy's natural defences while its immune system is immature and still developing. The combination of nutrients that contain high quality protein (such as L.I.P., known for its very high digestibility) as well as prebiotics like FOS help to support your puppy's digestive health Large puppies have a long growth period, that's why they need a diet that accounts for the implications of this period.",
       isFavourite: false,
